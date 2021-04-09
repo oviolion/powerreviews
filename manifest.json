@@ -3,7 +3,7 @@
   "name": "powerreviews",
   "title": "PowerReviews",
   "description": "The most advanced collection and custom display capabilities delivering relevant and authentic shopping experiences across touch points and channels. More reviews. More trust. More sales.",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "defaultLocale": "pt-BR",
   "builders": {
     "react": "3.x",
@@ -76,6 +76,13 @@
         "title": "API Unique Id",
         "description": "The Unique Id referencing to the product id to get the reviews"
       },
+      "useLegacyReviews": {
+        "type": "boolean",
+        "access": "public",
+        "title": "Use Legacy Review Display Component",
+        "default": false,
+        "description": "Enable to use the Legacy Review Display component provided by the PowerReviews SDK, disable to use the VTEX Review Display component"
+      },
       "reviewFormStyleSheetSrc": {
         "type": "string",
         "access": "public",
@@ -87,6 +94,12 @@
         "access": "public",
         "title": "Q&A Stylesheet Source",
         "description": "Enter your stylesheet source for the Q&A page (http://www.example.com/yourcssfile.css)"
+      },
+      "legacyReviewsStyleSheetSrc": {
+        "type": "string",
+        "access": "public",
+        "title": "Legacy Review Display Stylesheet Source",
+        "description": "Enter your stylesheet source for the Legacy Review Display page (http://www.example.com/yourcssfile.css)"
       }
     }
   },
